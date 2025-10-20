@@ -1,0 +1,36 @@
+[project]
+name = "mobile-test-framework"
+version = "0.1.0"
+description = "Mobile app testing framework using Selenium, Python, and uv for Chrome and Safari browsers"
+readme = "README.md"
+requires-python = ">=3.10.16"
+dependencies = [
+    "pytest>=8.4.2",
+    "pytest-html>=4.1.1",
+    "pytest-xdist>=3.8.0",
+    "selenium>=4.37.0",
+    "webdriver-manager>=4.0.2",
+    "appium-python-client>=4.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = """
+    -v
+    --html=reports/report.html
+    --self-contained-html
+    -n auto
+"""
+markers = [
+    "ios: mark test as iOS specific",
+    "android: mark test as Android specific",
+    "chrome: mark test for Chrome browser",
+    "safari: mark test for Safari browser",
+    "smoke: mark test as smoke test",
+    "regression: mark test as regression test",
+    "emulator: mark test for real emulator/simulator",
+    "browser_emulation: mark test for browser emulation mode",
+]

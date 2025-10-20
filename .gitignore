@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Test reports and screenshots
+reports/
+*.html
+*.png
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# WebDriver Manager cache
+.wdm/
+
+# Environment variables
+.env
+.env.local
+
+# appium
+appium.log
