@@ -1,5 +1,5 @@
 [project]
-name = "mobile-test-framework"
+name = "opennet-wap-testing"
 version = "0.1.0"
 description = "Mobile app testing framework using Selenium, Python, and uv for Chrome and Safari browsers"
 readme = "README.md"
