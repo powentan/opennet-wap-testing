@@ -68,8 +68,10 @@ def main():
             ["appium", "driver", "list"],
             capture_output=True, text=True, timeout=5
         )
-        has_xcuitest = "xcuitest" in result.stdout.lower()
-        has_uiautomator2 = "uiautomator2" in result.stdout.lower()
+        # Appium outputs to stderr, so check both stdout and stderr
+        output = (result.stdout + result.stderr).lower()
+        has_xcuitest = "xcuitest" in output
+        has_uiautomator2 = "uiautomator2" in output
         
         checks.append(check("XCUITest driver (iOS)", 
                            lambda: has_xcuitest,
@@ -77,8 +79,8 @@ def main():
         checks.append(check("UiAutomator2 driver (Android)", 
                            lambda: has_uiautomator2,
                            "Install: appium driver install uiautomator2"))
-    except:
-        print("⚠️  Could not check Appium drivers (Appium may not be running)")
+    except Exception as e:
+        print(f"⚠️  Could not check Appium drivers: {str(e)}")
     
     # Configuration files
     print("\nConfiguration Files:")
