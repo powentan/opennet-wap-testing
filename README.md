@@ -17,6 +17,10 @@ A comprehensive testing framework for mobile web applications using Python, Sele
 - 🔄 **Mobile Gestures**: Built-in support for swipe, tap, and long-press actions
 - 🤖 **Appium Integration**: Test on real Android emulators and iOS simulators
 
+## Demo
+
+![Test Execution Demo](assets/running_result.gif)
+
 ## Table of Contents
 
 - [Setup and Installation](#setup-and-installation)
