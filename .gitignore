@@ -10,6 +10,7 @@ wheels/
 .venv
 
 # Test reports and screenshots
+screenshots/
 reports/
 *.html
 *.png
@@ -31,3 +32,4 @@ reports/
 
 # appium
 appium.log
+.appium.pid
