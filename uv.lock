@@ -305,7 +305,7 @@ wheels = [
 ]
 
 [[package]]
-name = "mobile-test-framework"
+name = "opennet-wap-testing"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
