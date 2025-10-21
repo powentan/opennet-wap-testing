@@ -13,9 +13,9 @@ pytest: error: unrecognized arguments: --browser=chrome
 
 **Solution**:
 
-1. Make sure you're in the `mobile-test-framework` directory:
+1. Make sure you're in the `oppnet-wap-testing` directory:
    ```bash
-   cd /path/to/mobile-test-framework
+   cd /path/to/oppnet-wap-testing
    ```
 
 2. Use `uv run` to execute pytest (not just `pytest`):
@@ -36,12 +36,12 @@ pytest: error: unrecognized arguments: --browser=chrome
 
 From the project root (WAP directory):
 ```bash
-cd mobile-test-framework && uv run pytest --browser=chrome
+cd oppnet-wap-testing && uv run pytest --browser=chrome
 ```
 
 Or navigate first:
 ```bash
-cd mobile-test-framework
+cd oppnet-wap-testing
 uv run pytest --browser=chrome
 ```
 
@@ -84,7 +84,7 @@ uv run pytest tests/test_cases/test_framework.py::test_framework_setup -v
 
 1. **Check you're in the right directory**:
    ```bash
-   pwd  # Should show: .../mobile-test-framework
+   pwd  # Should show: .../oppnet-wap-testing
    ls   # Should show: tests/, config/, drivers/, etc.
    ```
 
@@ -111,4 +111,4 @@ uv run pytest tests/test_cases/test_framework.py::test_framework_setup -v
 
 ---
 
-**Remember**: Always run pytest from the `mobile-test-framework` directory using `uv run pytest`! 🚀
+**Remember**: Always run pytest from the `oppnet-wap-testing` directory using `uv run pytest`! 🚀

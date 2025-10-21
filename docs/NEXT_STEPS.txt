@@ -25,11 +25,11 @@ Your mobile testing framework has been successfully upgraded to support:
 ================================================================================
 
 # Terminal 1: Start Appium Server
-cd mobile-test-framework
+cd oppnet-wap-testing
 ./run-emulator-tests.sh start
 
 # Terminal 2: Run Test
-cd mobile-test-framework
+cd oppnet-wap-testing
 
 # Test iOS Simulator
 ./run-emulator-tests.sh test-ios "iPhone SE (3rd generation)"

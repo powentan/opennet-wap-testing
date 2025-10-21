@@ -6,7 +6,7 @@
 
 Navigate to the framework directory:
 ```bash
-cd mobile-test-framework
+cd oppnet-wap-testing
 ```
 
 Run the quick start script:

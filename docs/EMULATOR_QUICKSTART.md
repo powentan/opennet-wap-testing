@@ -14,7 +14,7 @@ The framework now supports **TWO testing modes**:
 ### 1. Start Appium Server (Required for Real Emulators)
 
 ```bash
-cd mobile-test-framework
+cd oppnet-wap-testing
 
 # Option 1: Use helper script
 ./run-emulator-tests.sh start

@@ -34,7 +34,7 @@ Complete documentation for testing mobile web applications with browser emulatio
 
 ```bash
 # Navigate to framework
-cd mobile-test-framework
+cd oppnet-wap-testing
 
 # Install dependencies (first time only)
 uv sync
@@ -86,7 +86,7 @@ appium driver install uiautomator2  # Android
 
 ```bash
 # Navigate to framework directory
-cd mobile-test-framework
+cd oppnet-wap-testing
 
 # Install all dependencies
 uv sync
@@ -496,7 +496,7 @@ Automatically captured on test failures:
 
 ```bash
 # 1. Verify setup
-cd mobile-test-framework
+cd oppnet-wap-testing
 uv run pytest --version
 
 # 2. Run first test (browser emulation)
@@ -581,7 +581,7 @@ You now have access to comprehensive documentation for both browser emulation an
 
 **Start testing:**
 ```bash
-cd mobile-test-framework
+cd oppnet-wap-testing
 uv run pytest -m smoke
 ```
 

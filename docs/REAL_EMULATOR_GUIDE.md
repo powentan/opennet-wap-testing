@@ -53,7 +53,7 @@ appium > appium.log 2>&1 &
 
 ```bash
 # Navigate to framework directory
-cd mobile-test-framework
+cd oppnet-wap-testing
 
 # Run on iPhone SE (3rd generation)
 uv run pytest tests/test_cases/test_real_emulators.py \

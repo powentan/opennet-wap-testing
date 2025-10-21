@@ -45,7 +45,7 @@ appium driver list
 ### Step 2: Start Appium Server
 
 ```bash
-cd mobile-test-framework
+cd oppnet-wap-testing
 
 # Option A: Use helper script (recommended)
 ./run-emulator-tests.sh start
@@ -400,7 +400,7 @@ Your framework is fully configured for real emulator and simulator testing!
 
 **Next command to run:**
 ```bash
-cd mobile-test-framework
+cd oppnet-wap-testing
 ./run-emulator-tests.sh start
 ./run-emulator-tests.sh test-ios "iPhone SE (3rd generation)"
 ```

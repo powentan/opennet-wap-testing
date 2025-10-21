@@ -36,7 +36,7 @@ This is a complete, production-ready mobile testing framework built with:
 ## 📁 Project Structure
 
 ```
-mobile-test-framework/
+oppnet-wap-testing/
 ├── config/                    # Configuration management
 │   ├── config.py             # Device presets, settings
 │   └── __init__.py
@@ -75,7 +75,7 @@ mobile-test-framework/
 
 ### Installation
 ```bash
-cd mobile-test-framework
+cd oppnet-wap-testing
 uv sync
 ```
 
