@@ -13,7 +13,15 @@ class TestTwitchSearchAndScroll:
     def setup_method(self):
         self.landing_url = 'https://m.twitch.tv/'
     
-    def test_search_starcraft_step_by_step(self, driver):
+    @pytest.mark.parametrize(
+        argnames=['keyword'],
+        argvalues=[
+            ('StarCraft II',),
+            ('WarCraft III',),
+            ('Minecraft',),
+        ],
+    )
+    def test_search_keyword_and_screenshot_streamer(self, driver, keyword: str):
         """
         Same test but using step-by-step approach.
         
@@ -21,7 +29,7 @@ class TestTwitchSearchAndScroll:
         pytest tests/twitch/test_search_example.py::TestTwitchSearchAndScroll::test_search_starcraft_step_by_step -v -s
         """
         print("\n" + "="*70)
-        print("Test: Search StarCraft II (Step-by-Step)")
+        print(f"Test: Search {keyword} (Step-by-Step)")
         print("="*70)
         
         # Navigate
@@ -42,8 +50,8 @@ class TestTwitchSearchAndScroll:
         page.wait(2)
         
         # Step 3: Search
-        print("2️⃣  Searching for StarCraft II...")
-        page.search_and_submit("StarCraft II")
+        print(f"2️⃣  Searching for {keyword}...")
+        page.search_and_submit(keyword)
         
         print("3️⃣  Waiting for results...")
         page.wait(2)
